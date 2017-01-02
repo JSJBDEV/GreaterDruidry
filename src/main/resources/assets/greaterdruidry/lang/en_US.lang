@@ -1,0 +1,11 @@
+#Items
+item.ingotCopper.name=Copper Ingot
+item.itemBanner.name=Non-Placeable propaganda
+item.mixedChalcopyrite.name.name=Chalcopyrite mix
+#Blocks
+tile.oreCopper.name=Cuprite Ore
+tile.oreChalcopyrite.name=Chalcopyrite Ore
+tile.oreAzurite.name=Azurite Ore
+tile.blockBanner.name=Placeable progaganda
+#tabs
+itemGroup.geologicamain=Geologica: MAIN
