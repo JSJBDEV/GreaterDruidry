@@ -5,7 +5,7 @@ import net.minecraft.item.Item;
 import uk.co.conclipsegames.greaterdruidry.GreaterDruidry;
 
 /**
- * Created by James Swire on 02/01/2017.
+ * Created by James on 02/01/2017.
  */
 public class ItemBase extends Item {
     protected String name;

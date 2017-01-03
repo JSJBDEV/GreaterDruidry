@@ -3,15 +3,16 @@ package uk.co.conclipsegames.greaterdruidry.item;
 /**
  * Created by James Swire on 02/01/2017.
  */
+import elucent.roots.Roots;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-    public static ItemBase ingotCopper;
+    public static ItemBase itemTankard;
     public static void init() {
-        ingotCopper = register(new ItemBase("ingotCopper").setCreativeTab(CreativeTabs.MATERIALS));
+        itemTankard = register(new ItemBase("itemTankard").setCreativeTab(Roots.tab));
     }
 
 
