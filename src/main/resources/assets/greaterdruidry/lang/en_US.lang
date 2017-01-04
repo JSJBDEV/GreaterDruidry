@@ -1,11 +1,20 @@
 #Items
-item.ingotCopper.name=Copper Ingot
-item.itemBanner.name=Non-Placeable propaganda
-item.mixedChalcopyrite.name.name=Chalcopyrite mix
+item.itemTankard.name=Tankard
+item.trancePowder.name=Trance Powder
 #Blocks
-tile.oreCopper.name=Cuprite Ore
-tile.oreChalcopyrite.name=Chalcopyrite Ore
-tile.oreAzurite.name=Azurite Ore
-tile.blockBanner.name=Placeable progaganda
-#tabs
-itemGroup.geologicamain=Geologica: MAIN
+tile.wyrrdTravel.name=Traveller's Wyrrd Stone
+#Research
+roots.research.adv.name=Greater Druidry
+
+
+roots.research.adv.trances.name= Trances [GD]
+roots.research.adv.trances.page1title.name= Trances [GD]
+roots.research.adv.trances.page1info=Trances are wonderous things, by combining some ingredients you found lying around your humble abode you have discovered how to make a powder that sends you into a trance-like state. It seems a bit weak now, but you recon you could upgrade it somehow.
+
+roots.research.adv.beverages.name=Druidic Beverages [GD]
+roots.research.adv.beverages.page1title.name=Druidic Beverages [GD]
+roots.research.adv.beverages.page1info=
+
+roots.research.adv.wyrrd.name=Wyrrdstone Magic [GD]
+roots.research.adv.wyrrd.page1title.name=Wyrrdstone Magic [GD]
+roots.research.adv.wyrrd.page1info=Wyrrd, a VERY underated magic, is about inscribing stones with special runes that then give them an unnatural function. to this extent you would first craft an appropriate rune chalk and with that, surround it with 8 stone bricks in a mundane crafting table.

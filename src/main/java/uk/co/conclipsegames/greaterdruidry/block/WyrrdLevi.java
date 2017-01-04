@@ -1,0 +1,48 @@
+package uk.co.conclipsegames.greaterdruidry.block;
+
+import net.minecraft.block.BlockSoulSand;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import uk.co.conclipsegames.greaterdruidry.GreaterDruidry;
+
+/**
+ * Created by James Swire on 04/01/2017.
+ */
+public class WyrrdLevi extends BlockSoulSand {
+
+    protected String name;
+
+    public WyrrdLevi(String name) {
+
+
+        this.name = name;
+
+        setUnlocalizedName(name);
+        setRegistryName(name);
+
+    }
+
+    public void registerItemModel(ItemBlock itemBlock) {
+        GreaterDruidry.proxy.registerItemRenderer(itemBlock, 0, name);
+
+    }
+
+    @Override
+    public WyrrdLevi setCreativeTab(CreativeTabs tab) {
+        super.setCreativeTab(tab);
+        return this;
+    }
+    @Override
+    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
+    {
+        super.onEntityCollidedWithBlock(worldIn,pos,state,entityIn);
+        if(entityIn instanceof EntityLivingBase) ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(Potion.getPotionById(25), 50, 10));
+    }
+}

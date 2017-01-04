@@ -11,8 +11,14 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
     public static ItemBase itemTankard;
+    public static TranceSmoke trancePowder;
+    public static ItemBase chalkTravel;
+    public static ItemBase chalkLevi;
     public static void init() {
         itemTankard = register(new ItemBase("itemTankard").setCreativeTab(Roots.tab));
+        trancePowder = register(new TranceSmoke());
+        chalkTravel = register(new ItemBase("chalkTravel").setCreativeTab(Roots.tab));
+        chalkLevi = register(new ItemBase("chalkLevi").setCreativeTab(Roots.tab));
     }
 
 
