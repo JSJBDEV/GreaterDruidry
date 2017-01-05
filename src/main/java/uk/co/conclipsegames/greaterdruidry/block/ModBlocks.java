@@ -13,9 +13,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
     public static WyrrdTravel wyrrdTravel;
     public static WyrrdLevi wyrrdLevi;
+    public static WyrrdRegen wyrrdRegen;
     public static void init() {
         wyrrdTravel = register(new WyrrdTravel("wyrrdTravel").setCreativeTab(Roots.tab));
         wyrrdLevi = register(new WyrrdLevi("wyrrdLevi").setCreativeTab(Roots.tab));
+        wyrrdRegen = register(new WyrrdRegen("wyrrdRegen").setCreativeTab(Roots.tab));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {
@@ -30,6 +32,9 @@ public class ModBlocks {
         }
         if (block instanceof WyrrdLevi) {
             ((WyrrdLevi)block).registerItemModel(itemBlock);
+        }
+        if (block instanceof WyrrdRegen) {
+            ((WyrrdRegen)block).registerItemModel(itemBlock);
         }
 
         return block;

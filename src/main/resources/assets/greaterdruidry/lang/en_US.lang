@@ -1,8 +1,15 @@
 #Items
 item.itemTankard.name=Tankard
 item.trancePowder.name=Trance Powder
+item.chalkBase.name=Basic Chalk
+item.chalkRegen.name=Regenerative Chalk
+item.chalkLevi.name=Levitating Chalk
+item.chalkTrav.name=Traveller's Chalk
+
 #Blocks
 tile.wyrrdTravel.name=Traveller's Wyrrd Stone
+tile.wyrrdLevi.name=Wind-Walker's Wyrrd Stone
+tile.wyrrdRegen.name=Regenerator's Wyrrd Stone
 #Research
 roots.research.adv.name=Greater Druidry
 

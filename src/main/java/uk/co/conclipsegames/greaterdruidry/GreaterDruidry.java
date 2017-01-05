@@ -8,6 +8,8 @@ import elucent.roots.research.ResearchBase;
 import elucent.roots.research.ResearchGroup;
 import elucent.roots.research.ResearchManager;
 import elucent.roots.research.ResearchPage;
+import elucent.roots.ritual.RitualManager;
+import elucent.roots.ritual.rituals.RitualCrafting;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -48,6 +50,17 @@ public class GreaterDruidry {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         utils.info(name + " injected a Roots tab!");
+
+        RitualManager.rituals.add(new RitualCrafting("chalkTravCrafting", 205, 86, 0)
+                .setResult(new ItemStack(ModItems.chalkTrav,1))
+                .addIncense(new ItemStack(RegistryManager.jungleTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.jungleTreeBark,1))
+                .addIngredient(new ItemStack(ModItems.chalkBase,1))
+                .addIngredient(new ItemStack(ModItems.trancePowder,1))
+                .addIngredient(new ItemStack(Items.GOLDEN_BOOTS,1)));
+
+
+
         ResearchManager.globalResearches.add(new ResearchGroup("adv","Greater Druidry")
                 .addResearch(new ResearchBase("beverages",new ItemStack(ModItems.itemTankard))
                         .addPage(new ResearchPage()
@@ -61,13 +74,23 @@ public class GreaterDruidry {
                 )
                 .addResearch(new ResearchBase("wyrrd",new ItemStack(ModBlocks.wyrrdTravel))
                         .addPage(new ResearchPage()
-                                .addCraftingRecipe(new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Items.STICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK), new ItemStack(ModBlocks.wyrrdTravel))
-                                .addCraftingRecipe(new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Items.STICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK),new ItemStack(Blocks.STONEBRICK), new ItemStack(ModBlocks.wyrrdLevi))
+                                .addCraftingRecipe(new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(ModItems.chalkTrav),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick), new ItemStack(ModBlocks.wyrrdTravel))
+                        )
+                        .addPage(new ResearchPage()
+                                .addCraftingRecipe(new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(ModItems.chalkLevi),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick), new ItemStack(ModBlocks.wyrrdLevi))
 
+                        )
+                )
+                .addResearch(new ResearchBase("chalk",new ItemStack(ModItems.chalkBase))
+                        .addPage(new ResearchPage()
+                                .addAltarRecipe(RitualManager.getRitualFromName("chalkTravCrafting"))
                         )
                 )
 
         );
+
+
+
 
     }
 
