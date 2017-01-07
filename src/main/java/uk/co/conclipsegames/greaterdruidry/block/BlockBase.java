@@ -30,4 +30,17 @@ public class BlockBase extends Block {
         super.setCreativeTab(tab);
         return this;
     }
+    @Override
+    public BlockBase setLightLevel(float value)
+    {
+        super.setLightLevel(value);
+        return this;
+    }
+    @Override
+    public BlockBase setLightOpacity(int opacity)
+    {
+        super.setLightOpacity(opacity);
+        return this;
+    }
+
 }

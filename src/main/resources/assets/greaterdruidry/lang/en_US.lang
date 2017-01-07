@@ -1,15 +1,17 @@
 #Items
-item.itemTankard.name=Tankard
-item.trancePowder.name=Trance Powder
-item.chalkBase.name=Basic Chalk
-item.chalkRegen.name=Regenerative Chalk
-item.chalkLevi.name=Levitating Chalk
-item.chalkTrav.name=Traveller's Chalk
+item.itemTankard.name=§5Tankard
+item.trancePowder.name=§5Trance Powder
+item.chalkBase.name=§5Basic Chalk
+item.chalkRegen.name=§5Regenerative Chalk
+item.chalkLevi.name=§5Levitating Chalk
+item.chalkTrav.name=§5Traveller's Chalk
+item.itemEverflame.name=§5Everflame
+item.itemRunedTabletNomadic.name=§5Nomadic Runed Tablet
 
 #Blocks
-tile.wyrrdTravel.name=Traveller's Wyrrd Stone
-tile.wyrrdLevi.name=Wind-Walker's Wyrrd Stone
-tile.wyrrdRegen.name=Regenerator's Wyrrd Stone
+tile.wyrrdTravel.name=§5Traveller's Wyrrd Stone
+tile.wyrrdLevi.name=§5Wind-Walker's Wyrrd Stone
+tile.wyrrdRegen.name=§5Regenerator's Wyrrd Stone
 #Research
 roots.research.adv.name=Greater Druidry
 
@@ -20,8 +22,20 @@ roots.research.adv.trances.page1info=Trances are wonderous things, by combining 
 
 roots.research.adv.beverages.name=Druidic Beverages [GD]
 roots.research.adv.beverages.page1title.name=Druidic Beverages [GD]
-roots.research.adv.beverages.page1info=
+roots.research.adv.beverages.page1info=Even a great and powerful druid has to sit back and relax once in a while, you have decided to see what Beverages can Quench your first so that you can continue your druidy a while longer.
 
 roots.research.adv.wyrrd.name=Wyrrdstone Magic [GD]
 roots.research.adv.wyrrd.page1title.name=Wyrrdstone Magic [GD]
 roots.research.adv.wyrrd.page1info=Wyrrd, a VERY underated magic, is about inscribing stones with special runes that then give them an unnatural function. to this extent you would first craft an appropriate rune chalk and with that, surround it with 8 stone bricks in a mundane crafting table.
+roots.research.adv.wyrrd.page2info=
+roots.research.adv.wyrrd.page2title.name=Wyrrdstone Magic [GD]
+
+roots.research.adv.chalk.name=Runic Chalk [GD]
+roots.research.adv.chalk.page1title.name=Runic Chalk [GD]
+roots.research.adv.chalk.page1info=Chalk, as mundane as it is, can be imbued with some very special properties, you have found out about a special type of magic called wyrrd, and you think this may be useful.
+roots.research.adv.chalk.page2title.name=Traveller's Chalk
+roots.research.adv.chalk.page3title.name=Regenerative Chalk
+roots.research.adv.chalk.page4title.name=Levitating Chalk
+
+roots.research.adv.everflame.name=Everflame [GD]
+roots.research.adv.everflame.page1title.name=Everflame [GD]

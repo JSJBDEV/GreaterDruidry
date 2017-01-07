@@ -17,7 +17,7 @@ import net.minecraft.world.World;
         import uk.co.conclipsegames.greaterdruidry.GreaterDruidry;
 
 /**
- * Created by James Swire on 04/01/2017.
+ * Created by James on 04/01/2017.
  */
 public class TranceSmoke extends ItemFood{
     public TranceSmoke(){

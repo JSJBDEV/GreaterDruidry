@@ -14,10 +14,13 @@ public class ModBlocks {
     public static WyrrdTravel wyrrdTravel;
     public static WyrrdLevi wyrrdLevi;
     public static WyrrdRegen wyrrdRegen;
+    public static BlockBase blockEverflame;
+
     public static void init() {
         wyrrdTravel = register(new WyrrdTravel("wyrrdTravel").setCreativeTab(Roots.tab));
         wyrrdLevi = register(new WyrrdLevi("wyrrdLevi").setCreativeTab(Roots.tab));
         wyrrdRegen = register(new WyrrdRegen("wyrrdRegen").setCreativeTab(Roots.tab));
+        blockEverflame = register(new BlockBase(Material.CLOTH,"blockEverflame").setLightLevel(70).setLightOpacity(100));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {

@@ -1,7 +1,7 @@
 package uk.co.conclipsegames.greaterdruidry.item;
 
 /**
- * Created by James Swire on 02/01/2017.
+ * Created by James on 02/01/2017.
  */
 import elucent.roots.Roots;
 import net.minecraft.creativetab.CreativeTabs;
@@ -16,6 +16,9 @@ public class ModItems {
     public static ItemBase chalkLevi;
     public static ItemBase chalkRegen;
     public static ItemBase chalkBase;
+    public static itemEverflame itemEverflame;
+    public static EnhancedTablet itemRunedTabletNomadic;
+
     public static void init() {
         itemTankard = register(new ItemBase("itemTankard").setCreativeTab(Roots.tab));
         trancePowder = register(new TranceSmoke());
@@ -23,6 +26,8 @@ public class ModItems {
         chalkLevi = register(new ItemBase("chalkLevi").setCreativeTab(Roots.tab));
         chalkRegen = register(new ItemBase("chalkRegen").setCreativeTab(Roots.tab));
         chalkBase = register(new ItemBase("chalkBase").setCreativeTab(Roots.tab));
+        itemEverflame = register(new itemEverflame("itemEverflame").setCreativeTab(Roots.tab).setMaxDamage(1000));
+        itemRunedTabletNomadic = register(new EnhancedTablet("itemRunedTabletNomadic").setCreativeTab(Roots.tab));
     }
 
 
@@ -32,6 +37,14 @@ public class ModItems {
         if (item instanceof ItemBase) {
             ((ItemBase)item).registerItemModel();
         }
+        if (item instanceof itemEverflame) {
+            ((itemEverflame)item).registerItemModel();
+        }
+        if (item instanceof EnhancedTablet) {
+            ((EnhancedTablet)item).registerItemModel();
+        }
+
+
 
         return item;
     }

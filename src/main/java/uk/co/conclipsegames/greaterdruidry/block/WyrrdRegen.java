@@ -15,11 +15,11 @@ import uk.co.conclipsegames.greaterdruidry.GreaterDruidry;
 /**
  * Created by James on 04/01/2017.
  */
-public class WyrrdLevi extends BlockSoulSand {
+public class WyrrdRegen extends BlockSoulSand {
 
     protected String name;
 
-    public WyrrdLevi(String name) {
+    public WyrrdRegen(String name) {
 
 
         this.name = name;
@@ -35,7 +35,7 @@ public class WyrrdLevi extends BlockSoulSand {
     }
 
     @Override
-    public WyrrdLevi setCreativeTab(CreativeTabs tab) {
+    public WyrrdRegen setCreativeTab(CreativeTabs tab) {
         super.setCreativeTab(tab);
         return this;
     }
@@ -43,6 +43,6 @@ public class WyrrdLevi extends BlockSoulSand {
     public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
         super.onEntityCollidedWithBlock(worldIn,pos,state,entityIn);
-        if(entityIn instanceof EntityLivingBase) ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(Potion.getPotionById(25), 50, 10));
+        if(entityIn instanceof EntityLivingBase) ((EntityLivingBase)entityIn).addPotionEffect(new PotionEffect(Potion.getPotionById(10), 100, 0));
     }
 }

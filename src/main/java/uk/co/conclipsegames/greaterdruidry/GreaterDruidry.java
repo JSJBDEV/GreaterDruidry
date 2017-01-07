@@ -59,6 +59,44 @@ public class GreaterDruidry {
                 .addIngredient(new ItemStack(ModItems.trancePowder,1))
                 .addIngredient(new ItemStack(Items.GOLDEN_BOOTS,1)));
 
+        RitualManager.rituals.add(new RitualCrafting("chalkRegenCrafting", 205, 86, 0)
+                .setResult(new ItemStack(ModItems.chalkRegen,1))
+                .addIncense(new ItemStack(RegistryManager.darkOakTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.acaciaTreeBark,1))
+                .addIngredient(new ItemStack(ModItems.chalkBase,1))
+                .addIngredient(new ItemStack(Items.GHAST_TEAR,1))
+                .addIngredient(new ItemStack(Items.GOLDEN_CHESTPLATE,1)));
+
+        RitualManager.rituals.add(new RitualCrafting("chalkLeviCrafting", 205, 86, 0)
+                .setResult(new ItemStack(ModItems.chalkLevi,1))
+                .addIncense(new ItemStack(RegistryManager.jungleTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.jungleTreeBark,1))
+                .addIngredient(new ItemStack(ModItems.chalkBase,1))
+                .addIngredient(new ItemStack(Items.ENDER_PEARL,1))
+                .addIngredient(new ItemStack(Items.GOLDEN_LEGGINGS,1)));
+
+        RitualManager.rituals.add(new RitualCrafting("EverflameCrafting", 205, 86, 0)
+                .setResult(new ItemStack(ModItems.itemEverflame,1))
+                .addIncense(new ItemStack(RegistryManager.jungleTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.darkOakTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.acaciaTreeBark,1))
+                .addIncense(new ItemStack(RegistryManager.birchTreeBark,1))
+                .addIngredient(new ItemStack(Items.ENDER_EYE,1))
+                .addIngredient(new ItemStack(Items.FLINT_AND_STEEL,1))
+                .addIngredient(new ItemStack(Items.BLAZE_ROD,1))
+                .addBlock(RegistryManager.standingStoneT1, -3, 0, -3)
+                .addBlock(RegistryManager.standingStoneT1, -3, 0, 3)
+                .addBlock(RegistryManager.standingStoneT1, 3, 0, -3)
+                .addBlock(RegistryManager.standingStoneT1, 3, 0, 3)
+                .addBlock(RegistryManager.standingStoneT1, 3, 0, 0)
+                .addBlock(RegistryManager.standingStoneT1, -3, 0, 0)
+                .addBlock(RegistryManager.standingStoneT1, 0, 0, 3)
+                .addBlock(RegistryManager.standingStoneT1, 0, 0, -3)
+                .addBlock(RegistryManager.standingStoneT2, 5, 1, 0)
+                .addBlock(RegistryManager.standingStoneT2, -5, 1, 0)
+                .addBlock(RegistryManager.standingStoneT2, 0, 1, 5)
+                .addBlock(RegistryManager.standingStoneT2, 0, 1, -5));
+
 
 
         ResearchManager.globalResearches.add(new ResearchGroup("adv","Greater Druidry")
@@ -72,6 +110,21 @@ public class GreaterDruidry {
                                 .addCraftingRecipe(null, new ItemStack(RegistryManager.pestle), null, new ItemStack(RegistryManager.oldRoot), new ItemStack(Items.PAPER),new ItemStack(Items.GUNPOWDER), null,new ItemStack(Items.POISONOUS_POTATO), null, new ItemStack(ModItems.trancePowder))
                         )
                 )
+
+                .addResearch(new ResearchBase("chalk",new ItemStack(ModItems.chalkBase))
+                        .addPage(new ResearchPage()
+                                .addCraftingRecipe(null, new ItemStack(Items.DIAMOND), null, new ItemStack(Items.DYE,1,15), new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(Items.DYE,1,15), new ItemStack(Items.GLOWSTONE_DUST),new ItemStack(Items.EMERALD), new ItemStack(Items.GLOWSTONE_DUST), new ItemStack(ModItems.chalkBase))
+                        )
+                        .addPage(new ResearchPage()
+                                .addAltarRecipe(RitualManager.getRitualFromName("chalkTravCrafting"))
+                        )
+                        .addPage(new ResearchPage()
+                                .addAltarRecipe(RitualManager.getRitualFromName("chalkLeviCrafting"))
+                        )
+                        .addPage(new ResearchPage()
+                                .addAltarRecipe(RitualManager.getRitualFromName("chalkRegenCrafting"))
+                        )
+                )
                 .addResearch(new ResearchBase("wyrrd",new ItemStack(ModBlocks.wyrrdTravel))
                         .addPage(new ResearchPage()
                                 .addCraftingRecipe(new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(ModItems.chalkTrav),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick),new ItemStack(RegistryManager.runeStoneBrick), new ItemStack(ModBlocks.wyrrdTravel))
@@ -81,11 +134,11 @@ public class GreaterDruidry {
 
                         )
                 )
-                .addResearch(new ResearchBase("chalk",new ItemStack(ModItems.chalkBase))
+                .addResearch(new ResearchBase("everflame",new ItemStack(ModItems.itemEverflame))
                         .addPage(new ResearchPage()
-                                .addAltarRecipe(RitualManager.getRitualFromName("chalkTravCrafting"))
+                                .addAltarRecipe(RitualManager.getRitualFromName("EverflameCrafting")))
                         )
-                )
+
 
         );
 
