@@ -2,6 +2,8 @@ package uk.co.conclipsegames.greaterdruidry.Proxy;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import uk.co.conclipsegames.greaterdruidry.EventHandler;
 //import uk.co.conclipsegames.greaterdruidry.WyrrdStones;
@@ -10,7 +12,10 @@ import uk.co.conclipsegames.greaterdruidry.EventHandler;
  * Created by James Swire on 02/01/2017.
  */
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent event) {
+    //public void preInit(FMLPreInitializationEvent event) {
+        //registerEvents();
+    //}
+    public void Init(FMLInitializationEvent event){
         registerEvents();
     }
 

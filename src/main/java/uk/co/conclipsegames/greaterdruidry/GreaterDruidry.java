@@ -37,12 +37,13 @@ public class GreaterDruidry {
         utils.info(name + " is loading!");
         ModItems.init();
         ModBlocks.init();
-        proxy.preInit(event);
+        //proxy.preInit(event);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         ModRecipes.init();
+        proxy.Init(event);
 
 
     }

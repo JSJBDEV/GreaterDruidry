@@ -28,8 +28,9 @@ public class EnhancedTablet extends ItemRunedTablet {
     }
 
     @Override
-    public Item setContainerItem(Item containerItem) {
-        setContainerItem(this);
-        return super.setContainerItem(containerItem);
+    public EnhancedTablet setContainerItem(Item containerItem) {
+        super.setContainerItem(this);
+        return this;
     }
+
 }
