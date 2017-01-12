@@ -31,11 +31,11 @@ public class TranceSmoke extends ItemFood{
     @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving){
         super.onItemUseFinish(stack, worldIn, entityLiving);
-        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(8),1000,5));
-        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(5),1000,5));
-        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(11),1000,5));
-        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(15),1000,5));
-        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(1),1000,5));
+        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(8),500,5));
+        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(5),500,5));
+        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(11),500,5));
+        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(15),500,5));
+        entityLiving.addPotionEffect(new PotionEffect(Potion.getPotionById(1),500,5));
         return stack;
     }
 

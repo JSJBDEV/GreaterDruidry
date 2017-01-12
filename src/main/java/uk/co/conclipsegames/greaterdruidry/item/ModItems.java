@@ -18,6 +18,16 @@ public class ModItems {
     public static ItemBase chalkBase;
     public static itemEverflame itemEverflame;
     public static EnhancedTablet itemRunedTabletNomadic;
+    public static brewBirch brewBirch;
+    public static brewOak brewOak;
+    public static brewRoot brewRoot;
+    public static TranceHomeComing tranceHomeComing;
+    public static ItemBase itemStonewain;
+    public static ItemBase ingotEntropy;
+    public static itemCatalyst itemCatalyst;
+    public static itemCatalyst itemCircuitCatalyst;
+    public static itemCatalyst itemPistonCatalyst;
+    public static ItemBase itemLifewater;
 
     public static void init() {
         itemTankard = register(new ItemBase("itemTankard").setCreativeTab(Roots.tab));
@@ -28,6 +38,17 @@ public class ModItems {
         chalkBase = register(new ItemBase("chalkBase").setCreativeTab(Roots.tab));
         itemEverflame = register(new itemEverflame("itemEverflame").setCreativeTab(Roots.tab).setMaxDamage(1000));
         itemRunedTabletNomadic = register(new EnhancedTablet("itemRunedTabletNomadic").setCreativeTab(Roots.tab));
+        brewBirch = register(new brewBirch("brewBirch").setCreativeTab(Roots.tab));
+        brewOak = register(new brewOak("brewOak").setCreativeTab(Roots.tab));
+        brewRoot = register(new brewRoot("brewRoot").setCreativeTab(Roots.tab));
+        tranceHomeComing = register(new TranceHomeComing());
+        itemStonewain = register(new ItemBase("itemStonewain").setCreativeTab(Roots.tab));
+        ingotEntropy = register(new ItemBase("ingotEntropy"));
+        itemCatalyst = register(new itemCatalyst("itemCatalyst").setCreativeTab(Roots.tab));
+        itemCircuitCatalyst = register(new itemCatalyst("itemCircuitCatalyst").setCreativeTab(Roots.tab));
+        itemPistonCatalyst = register(new itemCatalyst("itemPistonCatalyst").setCreativeTab(Roots.tab));
+        itemLifewater = register(new ItemBase("itemLifewater").setCreativeTab(Roots.tab));
+
     }
 
 
@@ -42,6 +63,18 @@ public class ModItems {
         }
         if (item instanceof EnhancedTablet) {
             ((EnhancedTablet)item).registerItemModel();
+        }
+        if (item instanceof brewBirch) {
+            ((brewBirch)item).registerItemModel();
+        }
+        if (item instanceof brewOak) {
+            ((brewOak)item).registerItemModel();
+        }
+        if (item instanceof brewRoot) {
+            ((brewRoot)item).registerItemModel();
+        }
+        if (item instanceof itemCatalyst) {
+            ((itemCatalyst)item).registerItemModel();
         }
 
 

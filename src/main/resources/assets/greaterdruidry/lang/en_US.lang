@@ -7,28 +7,48 @@ item.chalkLevi.name=§5Levitating Chalk
 item.chalkTrav.name=§5Traveller's Chalk
 item.itemEverflame.name=§5Everflame
 item.itemRunedTabletNomadic.name=§5Nomadic Runed Tablet
+item.brewBirch.name=§5Birch Wine
+item.brewOak.name=§5Oaken Whiskey
+item.brewRoot.name=§5Root beer
+item.itemStonewain.name=§5Stonewain
+item.tranceHomeComing.name=§5Trance of The Home Coming
+item.ingotEntropy.name=§5Ingot of Entropy
+item.itemCatalyst.name=§5Blank Living Catalyst
+item.itemPistonCatalyst.name=§5Living Clockwork Catalyst
+item.itemCircuitCatalyst.name=§5Living Electronic Catalyst
+item.itemLifewater.name=§5Lifewater
 
 #Blocks
 tile.wyrrdTravel.name=§5Traveller's Wyrrd Stone
 tile.wyrrdLevi.name=§5Wind-Walker's Wyrrd Stone
 tile.wyrrdRegen.name=§5Regenerator's Wyrrd Stone
+
 #Research
 roots.research.adv.name=Greater Druidry
 
 
 roots.research.adv.trances.name= Trances [GD]
 roots.research.adv.trances.page1title.name= Trances [GD]
-roots.research.adv.trances.page1info=Trances are wonderous things, by combining some ingredients you found lying around your humble abode you have discovered how to make a powder that sends you into a trance-like state. It seems a bit weak now, but you recon you could upgrade it somehow.
+roots.research.adv.trances.page1info=Trances are odd things, by combining some ingredients you found lying around your humble abode you have discovered how to make a powder that sends you into a trance-like state. It seems a bit weak now, but you reckon you could upgrade it somehow. (Don't try this at home!)
 
 roots.research.adv.beverages.name=Druidic Beverages [GD]
 roots.research.adv.beverages.page1title.name=Druidic Beverages [GD]
-roots.research.adv.beverages.page1info=Even a great and powerful druid has to sit back and relax once in a while, you have decided to see what Beverages can Quench your first so that you can continue your druidy a while longer.
+roots.research.adv.beverages.page1info=Even a great and powerful druid has to sit back and relax once in a while, you have decided to see what Beverages can quench your thirst so that you can continue your druidy a while longer.
+roots.research.adv.beverages.page2title.name=Oaken Whiskey
+roots.research.adv.beverages.page2info=The whiskey made from the bark of a common oak tree appears to, ironically, have fire resistant qualities. Unfortunately as with all of your fermented beverages you are left feeling a bit tipsy for about 30 seconds.
+roots.research.adv.beverages.page3title.name=Birch Wine
+roots.research.adv.beverages.page3info=The wine you made out of mundane birch bark is some pretty powerful stuff; you note it works a lot like milk, removing any potion effects you may have. Unfortunately as with all of your fermented beverages you are left feeling a bit tipsy for about 30 seconds.
+roots.research.adv.beverages.page4title.name=Root Beer
+roots.research.adv.beverages.page4info=Using those roots you used to make this tablet, you have made a nutritious root beer, restoring hunger. Unfortunately as with all of your fermented beverages you are left feeling a bit tipsy for about 30 seconds.
 
 roots.research.adv.wyrrd.name=Wyrrdstone Magic [GD]
 roots.research.adv.wyrrd.page1title.name=Wyrrdstone Magic [GD]
-roots.research.adv.wyrrd.page1info=Wyrrd, a VERY underated magic, is about inscribing stones with special runes that then give them an unnatural function. to this extent you would first craft an appropriate rune chalk and with that, surround it with 8 stone bricks in a mundane crafting table.
+roots.research.adv.wyrrd.page1info=Wyrrd, a VERY underated magic, is about inscribing stones with special runes that then give them an unnatural function. to this extent you would first craft an appropriate rune chalk and with that, surround it with 8 runestone bricks in a mundane crafting table.
 roots.research.adv.wyrrd.page2info=
-roots.research.adv.wyrrd.page2title.name=Wyrrdstone Magic [GD]
+roots.research.adv.wyrrd.page2title.name=Wind-Walker's Wyrrd Stone
+roots.research.adv.wyrrd.page3title.name=Regenerator's Wyrrd Stone
+roots.research.adv.wyrrd.page3info=
+
 
 roots.research.adv.chalk.name=Runic Chalk [GD]
 roots.research.adv.chalk.page1title.name=Runic Chalk [GD]
@@ -39,3 +59,33 @@ roots.research.adv.chalk.page4title.name=Levitating Chalk
 
 roots.research.adv.everflame.name=Everflame [GD]
 roots.research.adv.everflame.page1title.name=Everflame [GD]
+roots.research.adv.everflame.page1info=The Everflame appears to be an orb of pure light, it appears to give you sight in the darkest of places on a simple right click. it also appears it can light things on fire like a fire charge or some flint and steel, but the Everflame has quite a considerably larger durability
+roots.research.adv.everflame.page2title.name=Everflame Crafting
+
+roots.research.adv.nomad.name=Nomadic Magic [GD]
+roots.research.adv.nomad.page1title.name= Nomadic Magic [GD]
+roots.research.adv.nomad.page1info=The Nomads are travelling druids. you think that if you could learn from there ways you could unlock some secrets of the world around you. You start off by constructing a new tablet, it seems imbuing it with some typical travelling items (and some lapis) you can create a tablet, that can help you in crafting.
+roots.research.adv.nomad.page2title.name=Nomadic Tablet
+
+roots.research.adv.advTrances.name=Advanced Trances [GD]
+roots.research.adv.advTrances.page1title.name= Advanced Trances [GD]
+roots.research.adv.advTrances.page1info=Finally you have found a way to upgrade your trance powder, with interesting effects. You have found that by imbuing your powder at an altar you can make something so potent that it literally transports you to your bed.
+roots.research.adv.advTrances.page2title.name=Advanced Trances [GD]
+
+roots.research.adv.stonewain.name=Stonewain [GD]
+roots.research.adv.stonewain.page1title.name=Stonewain [GD]
+roots.research.adv.stonewain.page1info=You have created a very volatile substance, so volatile in fact that if it goes near an ore, the stone is immediately eradicated, on the plus side you do get more useful ingots then an average furnace. You reckon that you could have the same effect on other ores, but you may need to put some more thought into that. (or install the ZenScript that does it via Minetweaker)
+
+roots.research.adv.catalyst.name=Living Catalyst [GD]
+roots.research.adv.catalyst.page1title.name=Living Catalyst [GD]
+roots.research.adv.catalyst.page1info=You hve found a way to infuse a runestone symbol with pure living essence. You can now create catalysts, items that do not get used up but allow magic to flow through simple items. Many items can now be crafted with a bit of lapis as this appears to be the best substance to work the catalyst. You think later however that you could find a more efficient item.
+roots.research.adv.catalyst.page2title.name=Blank Catalyst
+roots.research.adv.catalyst.page3title.name=Clockwork Catalyst
+roots.research.adv.catalyst.page3info=
+roots.research.adv.catalyst.page4title.name=Circuit Catalyst
+roots.research.adv.catalyst.page4info=
+
+roots.research.adv.lifewater.name=Lifewater [GD]
+roots.research.adv.lifewater.page1title.name=Lifewater [GD]
+roots.research.adv.lifewater.page1info=You have found a way to imbue mundane water with the power of a verdant sprig, thus allowing you to create a substance that can make life even in the Deadest of places.
+roots.research.adv.lifewater.page2title.name=Lifewater

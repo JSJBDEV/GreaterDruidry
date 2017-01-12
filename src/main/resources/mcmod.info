@@ -8,9 +8,9 @@
   "url": "",
   "updateUrl": "",
   "authorList": ["Acrogenous A.K.A acrominer"],
-  "credits": "shadowfacts for an awesome tutorial",
+  "credits": "shadowfacts for an awesome tutorial, Inky2013 for a bt of java, Elucent and team for making Roots.",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["Roots"]
 }
 ]
